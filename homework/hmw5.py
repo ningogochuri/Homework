@@ -1,0 +1,31 @@
+# correct_pin="1234"
+# max_attempts=3
+# attempts=0
+# while attempts<max_attempts:
+#     pin=input("Enter your 4-digit Pin: ")
+#     attempts+=1
+#     if pin==correct_pin:
+#        print("Access granted")
+#        break
+#     else:
+#         remaining=max_attempts-attempts
+#         if remaining>0:
+#             print(f"Incorrect Pin. Remaining attempts:{remaining}")
+#         else:
+#             print("card blocked")
+
+
+# n=int(input("Enter a positive integer: "))
+# total=0
+# for i in range(2,n+1,2):
+#     total+=i
+# print(f"Sum of even numers from 1 to {n} is: {total}")
+
+
+text=input("Enter a string: ")
+result=""
+for char in text:
+    if char.isdigit():
+     continue
+    result+=char
+print(result)

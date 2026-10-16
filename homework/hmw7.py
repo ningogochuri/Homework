@@ -11,7 +11,7 @@
 #     print(f"Total price: ${total}")
 
 
-    
+
 
 age = input("Enter your age: ")
 try:
@@ -40,3 +40,4 @@ finally:
 #     print(f"Index out of bounds! Choose an index between 0 and {len(fruits)-1}.")
 # else:
 #     print("Successfully retrieved item!")
+

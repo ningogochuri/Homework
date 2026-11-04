@@ -59,79 +59,79 @@
 
 
 
-# import requests
+import requests
 
-# BASE_URL = 'https://crudcrud.com/api/bf564ce17b1c4b98a14481f2ecc61982/products'
+BASE_URL = 'https://crudcrud.com/api/bf564ce17b1c4b98a14481f2ecc61982/products'
 
-# product_id = '6ae8db9432e95a03e89efd9b'
+product_id = '6ae8db9432e95a03e89efd9b'
 
-# try:
-#     response = requests.get(
-#         f"{BASE_URL}/{product_id}",
-#         timeout=10
-#     )
+try:
+    response = requests.get(
+        f"{BASE_URL}/{product_id}",
+        timeout=10
+    )
 
-#     response.raise_for_status()
+    response.raise_for_status()
 
-#     product = response.json()
+    product = response.json()
 
-#     print(f"Name: {product['name']}")
-#     print(f"Price: {product['price']}")
-#     print(f"In stock: {product['in_stock']}")
-#     print(f"ID: {product['_id']}")
+    print(f"Name: {product['name']}")
+    print(f"Price: {product['price']}")
+    print(f"In stock: {product['in_stock']}")
+    print(f"ID: {product['_id']}")
 
-# except requests.exceptions.HTTPError as e:
-#     print("HTTP Error:", e)
+except requests.exceptions.HTTPError as e:
+    print("HTTP Error:", e)
 
-# except requests.exceptions.ConnectTimeout:
-#     print("Server took too long")
+except requests.exceptions.ConnectTimeout:
+    print("Server took too long")
 
-# except requests.exceptions.ConnectionError:
-#     print("Connection Error")
+except requests.exceptions.ConnectionError:
+    print("Connection Error")
 
 
 
-# import requests
+import requests
 
-# BASE_URL = 'https://crudcrud.com/api/bf564ce17b1c4b98a14481f2ecc61982/products'
+BASE_URL = 'https://crudcrud.com/api/bf564ce17b1c4b98a14481f2ecc61982/products'
 
-# product_id = '6ae8db9432e95a03e89efd9b'
+product_id = '6ae8db9432e95a03e89efd9b'
 
-# updated_data = {
-#     "name": "Gaming Laptop",
-#     "price": 3200,
-#     "in_stock": True
-# }
+updated_data = {
+    "name": "Gaming Laptop",
+    "price": 3200,
+    "in_stock": True
+}
 
-# try:
-#     response = requests.put(
-#         f"{BASE_URL}/{product_id}",
-#         json=updated_data,
-#         timeout=10
-#     )
+try:
+    response = requests.put(
+        f"{BASE_URL}/{product_id}",
+        json=updated_data,
+        timeout=10
+    )
 
-#     response.raise_for_status()
+    response.raise_for_status()
 
-#     print("Status Code:", response.status_code)
+    print("Status Code:", response.status_code)
 
-#     check_response = requests.get(
-#         f"{BASE_URL}/{product_id}",
-#         timeout=10
-#     )
+    check_response = requests.get(
+        f"{BASE_URL}/{product_id}",
+        timeout=10
+    )
 
-#     check_response.raise_for_status()
+    check_response.raise_for_status()
 
-#     print("Updated Product:")
-#     print(check_response.json())
+    print("Updated Product:")
+    print(check_response.json())
 
-# except requests.exceptions.HTTPError as e:
-#     print("HTTP Error:", e)
+except requests.exceptions.HTTPError as e:
+    print("HTTP Error:", e)
 
-# except requests.exceptions.ConnectTimeout:
-#     print("Server took too long")
+except requests.exceptions.ConnectTimeout:
+    print("Server took too long")
 
-# except requests.exceptions.ConnectionError:
-#     print("Connection Error")
+except requests.exceptions.ConnectionError:
+    print("Connection Error")
 
 
 
@@ -163,3 +163,4 @@ except requests.exceptions.ConnectTimeout:
 
 except requests.exceptions.ConnectionError:
     print("Connection Error")
+

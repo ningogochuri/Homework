@@ -1,4 +1,41 @@
 
+# import aiohttp
+# import asyncio
+
+
+# BASE_URL = 'https://jsonplaceholder.typicode.com/posts/{id}'
+
+
+# async def fetch_data(session, url):
+#     async with session.get(url) as response:
+#         response.raise_for_status()
+#         return await response.json()
+
+
+# async def main():
+#     async with aiohttp.ClientSession() as session:
+
+#         tasks = [
+#             fetch_data(session, BASE_URL.format(id=i))
+#             for i in range(1, 21)
+#         ]
+
+#         posts = await asyncio.gather(*tasks)
+
+#         filtered_posts = [
+#             post for post in posts
+#             if post['userId'] == 1
+#         ]
+
+#         print("Posts with userId = 1:")
+
+#         for post in filtered_posts:
+#             print(post['title'])
+
+
+# if __name__ == '__main__':
+#     asyncio.run(main())
+
 
 
 
